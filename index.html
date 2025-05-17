@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CLUE 기록지</title>
+  <link rel="stylesheet" href="./style/reset.css" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="./script/script.js" defer></script>
+  
+  
+</head>
+<body>
+  <div id="wrapper">
+    <div class="container">
+      <h3 class="title">CLUE 추리노트</h3>
+      <div class="pan_record">
+        <table class="table_record">
+          <thead>
+            <tr>
+              <th>증거</th>
+              <th><input type="text" placeholder="player1"></th>
+              <th><input type="text" placeholder="player2"></th>
+              <th><input type="text" placeholder="player3"></th>
+              <th><input type="text" placeholder="player4"></th>
+              <th><input type="text" placeholder="player5"></th>
+              <th><input type="text" placeholder="player6"></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th colspan="7" class="tr_head">범인은 ?</th>
+            </tr>
+            <tr>
+              <th data-check_num="0">그린</th>
+              <td class="green1" data-check="empty"></td>
+              <td class="green2" data-check="empty"></td>
+              <td class="green3" data-check="empty"></td>
+              <td class="green4" data-check="empty"></td>
+              <td class="green5" data-check="empty"></td>
+              <td class="green6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">머스타드</th>
+              <td class="mustard1" data-check="empty"></td>
+              <td class="mustard2" data-check="empty"></td>
+              <td class="mustard3" data-check="empty"></td>
+              <td class="mustard4" data-check="empty"></td>
+              <td class="mustard5" data-check="empty"></td>
+              <td class="mustard6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">피콕</th>
+              <td class="picock1" data-check="empty"></td>
+              <td class="picock2" data-check="empty"></td>
+              <td class="picock3" data-check="empty"></td>
+              <td class="picock4" data-check="empty"></td>
+              <td class="picock5" data-check="empty"></td>
+              <td class="picock6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">플럼</th>
+              <td class="plum1" data-check="empty"></td>
+              <td class="plum2" data-check="empty"></td>
+              <td class="plum3" data-check="empty"></td>
+              <td class="plum4" data-check="empty"></td>
+              <td class="plum5" data-check="empty"></td>
+              <td class="plum6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">스칼렛</th>
+              <td class="scalett1" data-check="empty"></td>
+              <td class="scalett2" data-check="empty"></td>
+              <td class="scalett3" data-check="empty"></td>
+              <td class="scalett4" data-check="empty"></td>
+              <td class="scalett5" data-check="empty"></td>
+              <td class="scalett6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">화이트</th>
+              <td class="white1" data-check="empty"></td>
+              <td class="white2" data-check="empty"></td>
+              <td class="white3" data-check="empty"></td>
+              <td class="white4" data-check="empty"></td>
+              <td class="white5" data-check="empty"></td>
+              <td class="white6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th colspan="7" class="tr_head">도구는 ?</th>
+            </tr>
+            <tr>
+              <th data-check_num="0">렌치</th>
+              <td class="wrench1" data-check="empty"></td>
+              <td class="wrench2" data-check="empty"></td>
+              <td class="wrench3" data-check="empty"></td>
+              <td class="wrench4" data-check="empty"></td>
+              <td class="wrench5" data-check="empty"></td>
+              <td class="wrench6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">촛대</th>
+              <td class="candlestick1" data-check="empty"></td>
+              <td class="candlestick2" data-check="empty"></td>
+              <td class="candlestick3" data-check="empty"></td>
+              <td class="candlestick4" data-check="empty"></td>
+              <td class="candlestick5" data-check="empty"></td>
+              <td class="candlestick6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">단검</th>
+              <td class="dagger1" data-check="empty"></td>
+              <td class="dagger2" data-check="empty"></td>
+              <td class="dagger3" data-check="empty"></td>
+              <td class="dagger4" data-check="empty"></td>
+              <td class="dagger5" data-check="empty"></td>
+              <td class="dagger6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">권총</th>
+              <td class="pistol1" data-check="empty"></td>
+              <td class="pistol2" data-check="empty"></td>
+              <td class="pistol3" data-check="empty"></td>
+              <td class="pistol4" data-check="empty"></td>
+              <td class="pistol5" data-check="empty"></td>
+              <td class="pistol6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">파이프</th>
+              <td class="pipe1" data-check="empty"></td>
+              <td class="pipe2" data-check="empty"></td>
+              <td class="pipe3" data-check="empty"></td>
+              <td class="pipe4" data-check="empty"></td>
+              <td class="pipe5" data-check="empty"></td>
+              <td class="pipe6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">밧줄</th>
+              <td class="rope1" data-check="empty"></td>
+              <td class="rope2" data-check="empty"></td>
+              <td class="rope3" data-check="empty"></td>
+              <td class="rope4" data-check="empty"></td>
+              <td class="rope5" data-check="empty"></td>
+              <td class="rope6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th colspan="7" class="tr_head">장소는 ?</th>
+            </tr>
+            <tr>
+              <th data-check_num="0">욕실</th>
+              <td class="bathroom1" data-check="empty"></td>
+              <td class="bathroom2" data-check="empty"></td>
+              <td class="bathroom3" data-check="empty"></td>
+              <td class="bathroom4" data-check="empty"></td>
+              <td class="bathroom5" data-check="empty"></td>
+              <td class="bathroom6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">서재</th>
+              <td class="library1" data-check="empty"></td>
+              <td class="library2" data-check="empty"></td>
+              <td class="library3" data-check="empty"></td>
+              <td class="library4" data-check="empty"></td>
+              <td class="library5" data-check="empty"></td>
+              <td class="library6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">게임룸</th>
+              <td class="game_room1" data-check="empty"></td>
+              <td class="game_room2" data-check="empty"></td>
+              <td class="game_room3" data-check="empty"></td>
+              <td class="game_room4" data-check="empty"></td>
+              <td class="game_room5" data-check="empty"></td>
+              <td class="game_room6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">차고</th>
+              <td class="garage1" data-check="empty"></td>
+              <td class="garage2" data-check="empty"></td>
+              <td class="garage3" data-check="empty"></td>
+              <td class="garage4" data-check="empty"></td>
+              <td class="garage5" data-check="empty"></td>
+              <td class="garage6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">침실</th>
+              <td class="bedroom1" data-check="empty"></td>
+              <td class="bedroom2" data-check="empty"></td>
+              <td class="bedroom3" data-check="empty"></td>
+              <td class="bedroom4" data-check="empty"></td>
+              <td class="bedroom5" data-check="empty"></td>
+              <td class="bedroom6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">거실</th>
+              <td class="living_room1" data-check="empty"></td>
+              <td class="living_room2" data-check="empty"></td>
+              <td class="living_room3" data-check="empty"></td>
+              <td class="living_room4" data-check="empty"></td>
+              <td class="living_room5" data-check="empty"></td>
+              <td class="living_room6" data-check="empty"></td> 
+            </tr>
+            <tr>
+              <th data-check_num="0">부엌</th>
+              <td class="kitchen1" data-check="empty"></td>
+              <td class="kitchen2" data-check="empty"></td>
+              <td class="kitchen3" data-check="empty"></td>
+              <td class="kitchen4" data-check="empty"></td>
+              <td class="kitchen5" data-check="empty"></td>
+              <td class="kitchen6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">마당</th>
+              <td class="garden1" data-check="empty"></td>
+              <td class="garden2" data-check="empty"></td>
+              <td class="garden3" data-check="empty"></td>
+              <td class="garden4" data-check="empty"></td>
+              <td class="garden5" data-check="empty"></td>
+              <td class="garden6" data-check="empty"></td>
+            </tr>
+            <tr>
+              <th data-check_num="0">식당</th>
+              <td class="restaurant1" data-check="empty"></td>
+              <td class="restaurant2" data-check="empty"></td>
+              <td class="restaurant3" data-check="empty"></td>
+              <td class="restaurant4" data-check="empty"></td>
+              <td class="restaurant5" data-check="empty"></td>
+              <td class="restaurant6" data-check="empty"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
